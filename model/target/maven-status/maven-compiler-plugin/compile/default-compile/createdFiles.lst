@@ -1,0 +1,6 @@
+pl\model\Student.class
+pl\model\service\StudentService.class
+pl\model\Group.class
+pl\hibernate\HibernateUtil.class
+pl\model\Lecturer.class
+pl\model\service\impl\StudentServiceImpl.class

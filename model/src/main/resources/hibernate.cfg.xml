@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://ec2-54-83-56-177.compute-1.amazonaws.com:5432/d9pgnh214vlsrv?sslmode=require</property>
+    <property name="hibernate.connection.username">gbzokhtnwoehpe</property>
+    <property name="hibernate.connection.password">CZhyOPUJbOw3Vw4FH6ncPx7Tlf</property>
+    <!-- Automatyczne tworzenie tabeli jeslni nie istnieje -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <!-- Enable Hibernate's automatic session context management -->
+    <property name="current_session_context_class">thread</property>
+    <!--mapowanie modelu klasy Student w cely wygenerowania tabeli w bazie danych-->
+    <property name="hibernate.temp.use_jdbc_metadata_defaults">false</property>
+    
+    <property name="hibernate.default_entity_mode">dynamic-map</property>
+    
+    <property name="show_sql">true</property>
+    
+    <mapping resource="pl/model/Student.hbm.xml"/>
+
+
+    <mapping resource="pl/model/Lecturer.hbm.xml"/>
+
+  </session-factory>
+</hibernate-configuration>

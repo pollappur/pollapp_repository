@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+
+<hibernate-mapping>
+
+    <class entity-name="Lecturer">
+
+   
+        <id name="id_lecturer"
+            type="long"
+            column="ID_LECTURER">
+            <generator class="sequence"/>
+        </id>
+
+        <property name="name"
+                  column="NAME"
+                  type="string"/>
+
+        <property name="surname"
+                  column="SURNAME"
+                  type="string"/>
+        
+        <property name="titile"
+                  column="TITLE"
+                  type="string"/>
+            
+        <property name="email"
+                  column="email"
+                  type="string"/>
+        
+        
+        
+      
+
+    </class>
+    
+</hibernate-mapping>
+

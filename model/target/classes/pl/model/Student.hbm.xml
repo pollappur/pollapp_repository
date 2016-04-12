@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>      
+
+
+    <class entity-name="pl.model.Student" table="STUDENT" >
+        
+        <id name="id_student" column="ID_STUDENT" type="long" > 
+            <generator class="sequence"/>  
+        </id>
+        
+        <property name="login" column="LOGIN" type="string"/>
+
+        <property name="password" column="PASSWORD" type="string"/>
+            
+        <property name="email" column="EMAIL" type="string"/>
+        
+        <property name="id_group" column="ID_GROUP" type="long"/>
+        
+        
+    </class>
+    
+</hibernate-mapping>
